@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brasil 🇧🇷</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(45deg,#009c3b,#ffdf00,#002776);
+    background-size:400% 400%;
+    animation:fundo 8s infinite alternate;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    overflow:hidden;
+}
+
+@keyframes fundo{
+    0%{background-position:left;}
+    100%{background-position:right;}
+}
+
+.brasil{
+    font-size:120px;
+    font-weight:bold;
+    color:white;
+    text-shadow:0 0 20px #000;
+    animation:pulsa 1.5s infinite;
+}
+
+@keyframes pulsa{
+    50%{transform:scale(1.08);}
+}
+
+.texto{
+    font-size:38px;
+    color:white;
+    font-weight:bold;
+    text-shadow:0 0 10px #000;
+    margin-bottom:30px;
+}
+
+.botao{
+    background:#1DB954;
+    color:white;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:50px;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.botao:hover{
+    transform:scale(1.1);
+}
+
+.bola{
+    position:absolute;
+    font-size:50px;
+    animation:subir 8s linear infinite;
+}
+
+@keyframes subir{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-150px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bola" style="left:10%">⚽</div>
+<div class="bola" style="left:30%;animation-delay:2s">⚽</div>
+<div class="bola" style="left:50%;animation-delay:4s">⚽</div>
+<div class="bola" style="left:70%;animation-delay:1s">⚽</div>
+<div class="bola" style="left:90%;animation-delay:3s">⚽</div>
+
+<div class="brasil">🇧🇷 BRASIL 🇧🇷</div>
+
+<div class="texto">
+QUE COMECEM OS JOGOS! ⚽🔥<br>
+RUMO AO HEXA! ⭐⭐⭐⭐⭐⭐
+</div>
+
+<a class="botao"
+href="https://open.spotify.com/track/14AUZpRJBDxBrB2WVW56mG"
+target="_blank">
+🎵 CLIQUE AQUI 🎵
+</a>
+
+</body>
+</html>
